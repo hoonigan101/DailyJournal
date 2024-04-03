@@ -53,6 +53,9 @@ app.get("/posts/:postName",function(req,res){
       });
     }
   });
+  app.use((req,res)=>{
+    res.render("pagenotfound");
+    })
 });
 
 
